@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ACCUEIL</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="FeuillePrincipale">
+            <header>
+                <h1>QUESTIONNAIRE SATISFACTION</h1>
+            </header>
+            <form method="post" action="TraiterAction.php">
+                <div class="InfosClients">
+                    <div class="Coordonnees">
+                        <label for="nomClient">Nom du client :</label>
+                        <br/>
+                        <input type="text" name="nomClient" id="nomClient"/>
+                        <br/><br/>
+                        <label for="prenomClient">Prénom du client :</label>
+                        <br/>
+                        <input type="text" name="prenomClient" id="prenomClient"/>
+                        <br/><br/>
+                        <label for="numChClient">N° de chambre du client :</label>
+                        <br/>
+                        <input type="text" name="numChClient" id="numChClient"/>
+                        <br/><br/>
+                        <label for="emailClient">Email du client :</label>
+                        <br/>
+                        <input type="email" name="emailClient" id="emailClient"/>
+                    </div>
+                    <div class="Sejour">
+                        <div class="DateLieuSejour">
+                            <label for="dateSejour">Date du séjour :</label>
+                            <br/>
+                            <input type="date" name="dateSejour" id="dateSejour"/>
+                            <br/><br/>
+                            <label for="lieuSejour">Lieu du séjour :</label>
+                            <br/>
+                            <select name="LieuSejour" id="lieuSejour">
+                                <option value="Côte d'Azur">Côte d'Azur</option>
+                                <option value="Normandie">Normandie</option>
+                                <option value="Sologne">Sologne</option>
+                                <option value="Sud-Ouest">Sud-Ouest</option>
+                            </select>
+                            <br/>
+                        </div>
+                        <div class="TypeFormuleSejour">
+                            <label>Type de séjour :</label>
+                            <br/>
+                            <input type="radio" name="typeSejour"   value="WEEK"      id="week"/>
+                            <label for="week">WEEK</label>
+                            <input type="radio" name="typeSejour"   value="MIDWEEK"   id="midweek"/>
+                            <label for="midweek">MIDWEEK</label>
+                            <input type="radio" name="typeSejour"   value="WEEK-END"  id="weekend"/>
+                            <label for="weekend">WEEK-END</label>
+                            <br/><br/>
+                            <label>Formule du séjour :</label>
+                            <br/>
+                            <input type="radio" name="FormuleS" value="DEMI-PENSION" id="demiP"/>
+                            <label for="demiP">Demi-pension</label>
+                            <input type="radio" name="FormuleS" value="PENSION COMPLETE" id="pensionC"/>
+                            <label for="pensionC">Pension complète </label>
+                        </div>
+                    </div>
+                    <div class="Photo">
+                        <img src="smiley-small.png" alt="PhotoHotel"/>
+                    </div>
+                </div>
+                <div class="Renseignements">
+                    <div class="Section">
+                        <fieldset>
+                            <legend>
+                                ACCUEIL
+                            </legend>
+                            <div class="Disposition" id="Reception">
+                                <p>La réception</p>
+                                <input type="radio" name="reception" value="Bon" id="recepBon"/>
+                                <label for="recepBon">Bon</label><br/>
+                                <input type="radio" name="reception" value="Très bon" id="recepTBon"/>
+                                <label for="recepTBon">Très bon</label><br/>
+                                <input type="radio" name="reception" value="Excellent" id="recepExcel"/>
+                                <label for="recepExcel">Excellent</label><br>
+                                <input type="radio" name="reception" value="Mauvais" id="recepMauvais"/>
+                                <label for="recepMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>Le personnel</p>
+                                <input type="radio" name="personnelC" value="Bon" id="persoBon"/>
+                                <label for="persoBon">Bon</label><br/>
+                                <input type="radio" name="personnelC" value="Très bon" id="persoTBon"/>
+                                <label for="persoTBon">Très bon</label><br/>
+                                <input type="radio" name="personnelC" value="Excellent" id="persoExcel"/>
+                                <label for="persoExcel">Excellent</label><br>
+                                <input type="radio" name="personnelC" value="Mauvais" id="persoMauvais"/>
+                                <label for="persoMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>La restauration</p>
+                                <input type="radio" name="resto" value="Bon" id="restoBon"/>
+                                <label for="restoBon">Bon</label><br/>
+                                <input type="radio" name="resto" value="Très bon" id="restoTBon"/>
+                                <label for="restoTBon">Très bon</label><br/>
+                                <input type="radio" name="resto" value="Excellent" id="restoExcel"/>
+                                <label for="restoExcel">Excellent</label><br>
+                                <input type="radio" name="resto" value="Mauvais" id="restoMauvais"/>
+                                <label for="restoMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>Les animateurs</p>
+                                <input type="radio" name="animateur" value="Bon" id="animBon"/>
+                                <label for="animBon">Bon</label><br/>
+                                <input type="radio" name="animateur" value="Très bon" id="animTBon"/>
+                                <label for="animTBon">Très bon</label><br/>
+                                <input type="radio" name="animateur" value="Excellent" id="animExcel"/>
+                                <label for="animExcel">Excellent</label><br>
+                                <input type="radio" name="animateur" value="Mauvais" id="animMauvais"/>
+                                <label for="animMauvais">Mauvais</label><br/>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="Section">
+                        <fieldset>
+                            <legend>
+                                PROPRETE
+                            </legend>
+                            <div class="Disposition" id="Chambre">
+                                <p>Les chambres</p>
+                                <input type="radio" name="chambre" value="Bon" id="ChBon"/>
+                                <label for="ChBon">Bon</label><br/>
+                                <input type="radio" name="chambre" value="Très bon" id="ChTBon"/>
+                                <label for="ChTBon">Très bon</label><br/>
+                                <input type="radio" name="chambre" value="Excellent" id="ChExcel"/>
+                                <label for="ChExcel">Excellent</label><br>
+                                <input type="radio" name="chambre" value="Mauvais" id="ChMauvais"/>
+                                <label for="ChMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>Le restaurant</p>
+                                <input type="radio" name="resto" value="Bon" id="prestoBon"/>
+                                <label for="prestoBon">Bon</label><br/>
+                                <input type="radio" name="resto" value="Très bon" id="prestoTBon"/>
+                                <label for="prestoTBon">Très bon</label><br/>
+                                <input type="radio" name="resto" value="Excellent" id="prestoExcel"/>
+                                <label for="prestoExcel">Excellent</label><br>
+                                <input type="radio" name="resto" value="Mauvais" id="prestoMauvais"/>
+                                <label for="prestoMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>Les équipements</p>
+                                <input type="radio" name="equipement" value="Bon" id="equipBon"/>
+                                <label for="equipBon">Bon</label><br/>
+                                <input type="radio" name="equipement" value="Très bon" id="equipTBon"/>
+                                <label for="equipTBon">Très bon</label><br/>
+                                <input type="radio" name="equipement" value="Excellent" id="equipExcel"/>
+                                <label for="equipExcel">Excellent</label><br>
+                                <input type="radio" name="equipement" value="Mauvais" id="equipMauvais"/>
+                                <label for="equipMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>Les jardins</p>
+                                <input type="radio" name="jardin" value="Bon" id="jardinBon"/>
+                                <label for="jardinBon">Bon</label><br/>
+                                <input type="radio" name="jardin" value="Très bon" id="jardinTBon"/>
+                                <label for="jardinTBon">Très bon</label><br/>
+                                <input type="radio" name="jardin" value="Excellent" id="jardinExcel"/>
+                                <label for="jardinExcel">Excellent</label><br>
+                                <input type="radio" name="jardin" value="Mauvais" id="jardinMauvais"/>
+                                <label for="jardinMauvais">Mauvais</label><br/>
+                            </div>
+                        </fieldset>
+                    </div>   
+                    <div class="Section">
+                        <fieldset>
+                            <legend>
+                                RESTAURATION
+                            </legend>
+                            <div class="Disposition" id="Qualite">
+                                <p>Les plats</p>
+                                <input type="radio" name="qualite" value="Bon" id="qualiteBon"/>
+                                <label for="qualiteBon">Bon</label><br/>
+                                <input type="radio" name="qualite" value="Très bon" id="qualiteTBon"/>
+                                <label for="qualiteTBon">Très bon</label><br/>
+                                <input type="radio" name="qualite" value="Excellent" id="qualiteExcel"/>
+                                <label for="qualiteExcel">Excellent</label><br>
+                                <input type="radio" name="qualite" value="Mauvais" id="qualiteMauvais"/>
+                                <label for="qualiteMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition">
+                                <p>Les menus</p>
+                                <input type="radio" name="menu" value="Bon" id="varieteBon"/>
+                                <label for="varieteBon">Bon</label><br/>
+                                <input type="radio" name="menu" value="Très bon" id="varieteTBon"/>
+                                <label for="varieteTBon">Très bon</label><br/>
+                                <input type="radio" name="menu" value="Excellent" id="varieteExcel"/>
+                                <label for="varieteExcel">Excellent</label><br>
+                                <input type="radio" name="menu" value="Mauvais" id="varieteMauvais"/>
+                                <label for="varieteMauvais">Mauvais</label><br/>
+                            </div>
+                            <div class="Disposition" id="TypeRepas">
+                                <p>Quel a été votre plat préféré?</p>
+                                <select>
+                                    <optgroup label="FRANCAISE">
+                                        <option value="BoeufBourguignon">Boeuf Bourguinon</option>
+                                        <option value="PoissonBordeaux">Poisson à la bordelaise</option> 
+                                    </optgroup>
+                                    <optgroup label="INDIENNE">
+                                        <option value="Poulet Tandori">Poulet Tandori</option>
+                                        <option value="Boeuf aux epices">Boeuf aux épices</option>
+                                    </optgroup>
+                                    <optgroup label="ASIATIQUE">
+                                        <option value="Nems aux crevettes">Nems aux crevettes</option>
+                                        <option value="Soupe aux vermicelles">Soupe aux vermicelles</option>
+                                    </optgroup>
+                                    <optgroup label="ITALIENNE">
+                                        <option value="Lasagnes à la bolognaise">Lasagnes à la bolognaise</option>
+                                        <option value="Pizza au chorizo">Pizza au chorizo</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="Section">
+                        <fieldset>
+                            <legend>
+                                ACTIVITES
+                            </legend>
+                            <div class="Disposition" id="Sports">
+                                <p>Sports</p>
+                                <input type="checkbox" name="sport" value="kitesurf" id="kitesurf"/>
+                                <label for="kitesurf">Kite Surf</label><br/>
+                                <input type="checkbox" name="sport" value="natation" id="natation"/>
+                                <label for="natation">Natation</label><br/>
+                                <input type="checkbox" name="sport" value="basket" id="basket"/>
+                                <label for="basket">Basket</label><br>
+                                <input type="checkbox" name="activite" value="golf" id="golf"/>
+                                <label for="golf">Golf</label>
+                            </div>
+                            <div class="Disposition">
+                                <p>Culture</p>
+                                <input type="checkbox" name="culture" value="exposition" id="exposition"/>
+                                <label for="exposition">Expositions</label><br/>
+                                <input type="checkbox" name="culture" value="excursion" id="excursion"/>
+                                <label for="excursion">Excursions</label><br/>
+                                <input type="checkbox" name="culture" value="cinema" id="cinema"/>
+                                <label for="cinema">Cinéma</label><br>
+                                <input type="checkbox" name="culture" value="spectacle" id="spectacle"/>
+                                <label for="spectacle">Spectacles</label>
+                            </div>
+                            <div class="Disposition">
+                                <p>Jeux</p>
+                                <input type="checkbox" name="jeux" value="tarot" id="tarot"/>
+                                <label for="tarot">Tarot</label><br/>
+                                <input type="checkbox" name="jeux" value="poker" id="poker"/>
+                                <label for="poker">Poker</label><br/>
+                                <input type="checkbox" name="jeux" value="belote" id="belote"/>
+                                <label for="belote">Plage</label><br>
+                                <input type="checkbox" name="jeux" value="bridge" id="bridge"/>
+                                <label for="bridge">Bridge</label>
+                            </div>
+                            <div class="Disposition">
+                                <p>Manuelles</p>
+                                <input type="checkbox" name="manuelle" value="cuisine" id="cuisine"/>
+                                <label for="cuisine">Cuisine</label><br/>
+                                <input type="checkbox" name="manuelle" value="menuiserie" id="menuiserie"/>
+                                <label for="menuiserie">Menuiserie</label><br/>
+                                <input type="checkbox" name="manuelle" value="poterie" id="poterie"/>
+                                <label for="poterie">Poterie</label><br/>
+                                <input type="checkbox" name="manuelle" value="Jardinage" id="jardinage"/>
+                                <label for="jardinage">Jardinage</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="Section">
+                        <fieldset>
+                            <legend>
+                                VOS COMMENTAIRES
+                            </legend>
+                            <div class="Disposition" id="Commentaires">
+                                <br/>
+                                <textarea rows="4" cols="80">
+                                    
+                                </textarea>
+                            </div>
+                            <div class="Disposition" id="BoutonEnvoyer">
+                                <input type="button" Value="Envoyer"/>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>    
+            </form>
+            <footer>
+                
+            </footer>
+        </div>
+    </body>
+</html>

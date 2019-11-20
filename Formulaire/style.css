@@ -1,0 +1,98 @@
+.FeuillePrincipale
+{
+ width:1000px;
+ height:780px;
+ border:2px solid black;
+ border-radius:15px;
+ margin:auto;
+ font-family:Tahoma, Calibri, arial, sans-serif;
+}
+
+h1
+{
+ text-align:center;
+ border-bottom:2px solid black;
+}
+
+.InfosClients
+{
+    border-bottom:1px solid black;
+    height:240px;
+}
+.Coordonnees
+{
+    padding:5px;
+    float:left;
+}
+.Sejour
+{
+ float:left;
+ margin-left:50px;
+ padding-top:5px;
+ padding-left:2px;
+ width:300px;
+}
+
+.TypeFormuleSejour
+{
+ padding-top:18px;
+}
+.Photo
+{
+ width:410px;
+ height:210px;
+ border:1px solid black;
+ margin-left:580px;
+}
+
+.Renseignements
+{height:450px;
+ overflow-y:scroll;
+}
+
+.Section
+{
+  padding:4px;
+}
+
+p
+{
+ color:#203864;
+ font-size:14px;
+ font-weight:bold;
+}
+
+legend
+{
+ font-weight: bold;
+ color:#00B050;
+}
+
+fieldset
+{
+ background:#FFE699;
+}
+
+.Disposition
+{
+    float:left;
+    width:120px;     /*Pour que les listes soient bien alignées verticalement et horizontalement.*/
+    margin-left:150px;
+}
+
+#Reception, #Chambre, #Qualite, #Sports, #Commentaires
+{
+ margin-left:0px; /*Pour que la première liste de choix soit collée à gauche.*/
+}
+
+#TypeRepas
+{
+  width : 240px;  /*Pour afficher correctement le label"Quel type de repas preniez-vous?"*/
+ }
+ 
+#BoutonEnvoyer
+{
+    margin-top:37px;
+    margin-left:500px;
+}
+
